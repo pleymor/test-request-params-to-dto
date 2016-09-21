@@ -1,0 +1,10 @@
+spring:
+    application:
+        name: request-params-to-dto
+
+server:
+    port: 8500
+
+security:
+    basic:
+        enabled: false

@@ -20,13 +20,15 @@ public class MyController {
     // GET: dto NOT populated from query params "?a=azaz"
     @RequestMapping(method = GET, path = "test")
     public @ResponseBody
-    String test(TestDto testDto){
-        return testDto.toString(); // null
+    TestDto test(TestDto testDto) {
+        return testDto; // null
     }
 
     // POST: dto WELL populated from body json {"a"="azaz"}
     @RequestMapping(method = POST, path = "test")
-    public @ResponseBody String postTest(@RequestBody TestDto testDto){
-        return testDto.toString(); // "azaz"
+    public
+    @ResponseBody
+    TestDto postTest(@RequestBody TestDto testDto) {
+        return testDto; // "azaz"
     }
 }

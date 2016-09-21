@@ -29,5 +29,5 @@ curl -i -X GET \
 returns:
 
 ```js
-{"a":null}
+{"a":"azaz"}
 ```

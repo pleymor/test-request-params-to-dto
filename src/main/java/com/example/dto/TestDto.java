@@ -5,10 +5,14 @@ package com.example.dto;
  */
 public class TestDto {
 
-    String a;
+    private String a;
 
     public String getA() {
         return a;
+    }
+
+    public void setA(String a) {
+        this.a = a;
     }
 
     @Override
